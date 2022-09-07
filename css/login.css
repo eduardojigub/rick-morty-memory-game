@@ -1,0 +1,53 @@
+.login-form {
+    display: flex;
+    flex-direction: column; /* para alinhar todos no sentido vertical */
+    align-items: center; /* para alinhar tudo ao centro */
+    height: 100vh; /* para o formulário ocupar 100% da altura da tela */
+    justify-content: center; /* para centralizar tudo verticalmente quanto horizontalmente */
+}
+
+.login__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px; /* para que a header tenha um espaço para outros elementos */
+}
+
+.login__header img {
+    width: 100px; /* define o tamanho da imagem para 100px */
+}
+
+.login__header h1 {
+    color: #333; /* define a cor do H1 */
+    font-size: 1.5em /*  */
+}
+
+.login__input {
+    border: 2px solid #333; /* colocando a borda no input */
+    border-radius: 8px; /* arredondando a borda */
+    color: #333;
+    font-size: 1em; 
+    margin-bottom: 15px; /* separando o input do botão */
+    width: 100%; /* para ocupar 100% da tela */
+    max-width: 300px; /* limitando o espaço máximo do input */
+    outline: none; /* retira o sombreado padrão do input */
+    padding: 15px; /* aumenta o espaçamento interno  */
+}
+
+.login__button {
+    background-color: #ee665c;
+    padding: 15px; /* espaçamento interno */
+    border-radius: 8px;
+    color: white; /* cor do texto */
+    cursor: pointer; /* aparecer a mãozinha no botão */
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login__button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
