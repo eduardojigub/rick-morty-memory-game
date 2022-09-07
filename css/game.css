@@ -36,6 +36,7 @@
     backface-visibility: hidden; /* esconde a parte de trás da carta */
 }
 
-.card:hover {
+.reveal-card {
     transform: rotateY(180deg);
-}
+  }
+  
