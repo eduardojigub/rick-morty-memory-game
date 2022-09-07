@@ -1,0 +1,42 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* repete 5x, uma fração do grid  */
+    gap: 15px; /* define espaçamento entre os cards */
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto; /* define top/bottom margin 0 e left-right margem automática, centraliza a imagem */
+}
+
+.card {
+    aspect-ratio: 3/4; /* define a proporção */
+    width: 100%;
+    background: #333;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease; /* animação do transform */
+    transform-style: preserve-3d; /* preserva um comportamento de 3d */
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover; 
+    background-position: center;
+    border: 2px, solid, #39813a;
+    border-radius: 5px;
+}
+
+.front {
+    background-image: url(../images/beth.png);
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url(../images/back.png);
+    backface-visibility: hidden; /* esconde a parte de trás da carta */
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
