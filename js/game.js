@@ -19,6 +19,9 @@ const createElement = (tag, className) => {
   return element;
 };
 
+let firstCard = "";
+let secondCard = "";
+
 const checkCards = () => {
   const firstCharacter = firstCard.getAttribute("data-character");
   const secondCharacter = secondCard.getAttribute("data-character");
@@ -29,8 +32,6 @@ const checkCards = () => {
 
     firstCard = "";
     secondCard = "";
-
-    checkEndGame();
   } else {
     setTimeout(() => {
       firstCard.classList.remove("reveal-card");
@@ -70,6 +71,7 @@ const createCard = (character) => {
   grid.appendChild(card);
 
   card.addEventListener("click", revealCard);
+  card.setAttribute("data-character", character);
 
   return card;
 };

@@ -39,4 +39,8 @@
 .reveal-card {
     transform: rotateY(180deg);
   }
-  
+
+.disabled-card {
+    filter: saturate(0); /* deixa preto em branco*/
+    opacity: 0.5;
+}
